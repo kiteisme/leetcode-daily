@@ -1,15 +1,25 @@
-﻿using LeetCode.Easy._0001_TwoSum;
+﻿using LeetCode.Med._0001_AddTwoNum;
 
 class Program
 {
     static void Main()
     {
-        int[] nums = { 2, 7, 11, 15 };
-        int target = 9;
+        var l1 = new ListNode(2, new ListNode(4, new ListNode(3)));
+        var l2 = new ListNode(5, new ListNode(6, new ListNode(4)));
 
         var s = new Solution();
-        var res = s.TwoSum(nums, target);
+        var res = s.AddTwoNum(l1, l2);
 
-        Console.WriteLine(string.Join(", ", res));
+        Print(res);
+    }
+
+    static void Print(ListNode node)
+    {
+        while (node != null)
+        {
+            Console.Write(node.val);
+            if (node.next != null) Console.Write(" -> ");
+            node = node.next;
+        }
     }
 }

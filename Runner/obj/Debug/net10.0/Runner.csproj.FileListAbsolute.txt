@@ -12,3 +12,4 @@ C:\Users\kieta\leetcode-daily\leetcode-daily\Runner\obj\Debug\net10.0\refint\Run
 C:\Users\kieta\leetcode-daily\leetcode-daily\Runner\obj\Debug\net10.0\Runner.pdb
 C:\Users\kieta\leetcode-daily\leetcode-daily\Runner\obj\Debug\net10.0\Runner.genruntimeconfig.cache
 C:\Users\kieta\leetcode-daily\leetcode-daily\Runner\obj\Debug\net10.0\ref\Runner.dll
+C:\Users\kieta\leetcode-daily\leetcode-daily\Runner\obj\Debug\net10.0\Runner.sourcelink.json
