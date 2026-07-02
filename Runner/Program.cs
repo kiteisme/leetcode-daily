@@ -1,25 +1,20 @@
-﻿using LeetCode.Med._0001_AddTwoNum;
+﻿using LeetCode.Easy._0004_longestCommonprefix;
 
-class Program
+Solution solution = new Solution();
+
+string[][] testCases =
 {
-    static void Main()
-    {
-        var l1 = new ListNode(2, new ListNode(4, new ListNode(3)));
-        var l2 = new ListNode(5, new ListNode(6, new ListNode(4)));
+    new string[] { "flower", "flow", "flight" },
+    new string[] { "dog", "racecar", "car" },
+    new string[] { "interspecies", "interstellar", "interstate" },
+    new string[] { "apple", "app", "application" },
+    new string[] { "a" },
+    new string[] { "", "" }
+};
 
-        var s = new Solution();
-        var res = s.AddTwoNum(l1, l2);
-
-        Print(res);
-    }
-
-    static void Print(ListNode node)
-    {
-        while (node != null)
-        {
-            Console.Write(node.val);
-            if (node.next != null) Console.Write(" -> ");
-            node = node.next;
-        }
-    }
+foreach (string[] strs in testCases)
+{
+    Console.WriteLine($"Input: [{string.Join(", ", strs)}]");
+    Console.WriteLine($"Output: \"{solution.LongestCommonPrefix(strs)}\"");
+    Console.WriteLine(new string('-', 40));
 }
